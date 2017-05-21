@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+   compile group: 'org.json', name: 'json', version: '20160810'
+   compile group: 'org.testng', name: 'testng', version: '6.11'
+}
+
+compileTestJava.options.encoding = "UTF-8"
+
+sourceSets {
+  test {
+    java {
+      srcDir 'src'
+    }
+  }
+}
+
+test {
+	useTestNG()
+}

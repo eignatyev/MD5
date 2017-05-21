@@ -1,0 +1,10 @@
+bin/*
+build/*
+gradle/*
+.gradle/*
+libs/*
+settings/*
+test-output/*
+.classpath
+.project
+TestNG.xml
